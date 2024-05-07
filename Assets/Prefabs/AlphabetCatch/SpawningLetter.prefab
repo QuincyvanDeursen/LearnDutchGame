@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2625105723768038098}
   - component: {fileID: -3715787242854658120}
   m_Layer: 5
-  m_Name: Letter
+  m_Name: SpawningLetter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A
+  m_text: J
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b5a4b1136111c324ab6d504d14f80f1c, type: 2}
   m_sharedMaterial: {fileID: -2001173290991609969, guid: b5a4b1136111c324ab6d504d14f80f1c, type: 2}
@@ -215,4 +215,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 5

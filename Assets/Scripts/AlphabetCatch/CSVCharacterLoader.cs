@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class CSVCharacterLoader : MonoBehaviour
 {
-    public TextAsset csvFile;
+    public List<TextAsset> csvFiles;
     private List<char> characterList = new List<char>();
+    public GameManager gameManager;
 
     void Start()
     {
-        if (csvFile != null)
+        if (csvFiles != null)
         {
-            ReadCSV(csvFile);
+            ReadCSV(csvFiles[gameManager.getPlayerLevel()]);
         }
         else
         {
