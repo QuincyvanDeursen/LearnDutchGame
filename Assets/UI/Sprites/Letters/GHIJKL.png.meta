@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 99fdf13d57b9aa348a0e88d137a693a4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GHIJKL_22
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 48
+        width: 200
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7efd6332ef9bc499b1d0541f241d9a
+      internalID: -704797674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GHIJKL_23
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 52
+        width: 177
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4e9aae2bf0e424cb463527d4851e20
+      internalID: -1610339366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GHIJKL_24
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 52
+        width: 65
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7565e0f2bd47ef4a80ced58b9b02d26
+      internalID: -1637981209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GHIJKL_25
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 48
+        width: 140
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df93cbbd16363c6469fbe5bd7f5befe7
+      internalID: -148030975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GHIJKL_26
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 52
+        width: 182
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43389b84b6d86c943b404663c0e1f378
+      internalID: -653195780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GHIJKL_27
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 52
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47afe94de234249429457cbab1b01988
+      internalID: -471100789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GHIJKL_0: -62172968
+      GHIJKL_1: 1050574752
+      GHIJKL_10: -59029095
+      GHIJKL_11: 1107512360
+      GHIJKL_12: -1561835652
+      GHIJKL_13: -683629687
+      GHIJKL_14: -1254374330
+      GHIJKL_15: -105012233
+      GHIJKL_16: -1219983634
+      GHIJKL_17: 1483516987
+      GHIJKL_18: 1795622724
+      GHIJKL_19: -770485525
+      GHIJKL_2: 1041755589
+      GHIJKL_20: -1949261892
+      GHIJKL_21: -214270196
+      GHIJKL_22: -704797674
+      GHIJKL_23: -1610339366
+      GHIJKL_24: -1637981209
+      GHIJKL_25: -148030975
+      GHIJKL_26: -653195780
+      GHIJKL_27: -471100789
+      GHIJKL_28: -1186441497
+      GHIJKL_29: 1356415360
+      GHIJKL_3: 1007929603
+      GHIJKL_30: 503046979
+      GHIJKL_31: 1626058795
+      GHIJKL_32: -313622140
+      GHIJKL_33: -829591417
+      GHIJKL_34: 786176988
+      GHIJKL_35: 1456642185
+      GHIJKL_36: 1336918851
+      GHIJKL_37: -1787507134
+      GHIJKL_38: -1318878826
+      GHIJKL_39: 1191816006
+      GHIJKL_4: -567655344
+      GHIJKL_40: -594964158
+      GHIJKL_41: -655425782
+      GHIJKL_42: -2072528640
+      GHIJKL_43: -1162901482
+      GHIJKL_44: 1512306598
+      GHIJKL_45: 1618292723
+      GHIJKL_46: -1117186051
+      GHIJKL_47: 120084437
+      GHIJKL_48: 717191852
+      GHIJKL_49: 1902863312
+      GHIJKL_5: -1609569220
+      GHIJKL_50: 1404648849
+      GHIJKL_51: 1527165158
+      GHIJKL_52: -25949066
+      GHIJKL_53: -1673353462
+      GHIJKL_54: -71391326
+      GHIJKL_55: 1116127032
+      GHIJKL_56: -804095857
+      GHIJKL_57: -1677759447
+      GHIJKL_58: 2093406468
+      GHIJKL_6: -89649646
+      GHIJKL_7: 641156588
+      GHIJKL_8: 1162073521
+      GHIJKL_9: 576796107
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
