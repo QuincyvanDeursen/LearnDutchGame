@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: 82683023456f51248affc2013381d565
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_2
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1222
+        width: 114
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9c24e86e68d9043a2078087fd49aa3
+      internalID: -104273376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1218
+        width: 164
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b235954414d324285f41ec326bf0b7
+      internalID: -2137358020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1220
+        width: 149
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df0d93ed62344e49804275bcb961d35
+      internalID: 1173702992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_7
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1218
+        width: 151
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fba5d1c7b5233419ba0288614dbdd5
+      internalID: 2034104545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_8
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1218
+        width: 156
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ef048c77dcc04429a022acc76b7320
+      internalID: -96067754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_9
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1220
+        width: 158
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9328c1dcb8c6248a6bccd274ab7062
+      internalID: -975477962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_10
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1167
+        width: 156
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7deb7c7c7b0df4abd9345ccfa46fe5
+      internalID: -1481774614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_13
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 858
+        width: 143
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230b7fcde3d61714283281d35a649040
+      internalID: 1006924747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_14
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 862
+        width: 62
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a6e2a49989f804ba3e9aa53291c422
+      internalID: -243480646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_15
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 808
+        width: 80
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1812bf2ef0306a14689af7c0242ede18
+      internalID: -1383523410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_16
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 858
+        width: 145
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3639a839ac02e44bee16956923a0e1
+      internalID: 1500261267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 500
+        width: 160
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39ba04ee02cc96478ed9f27a60547ba
+      internalID: -1245111528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_20
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 450
+        width: 152
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b55700c1ba3d643b4b27e0412018e2
+      internalID: 1409055744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_21
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 450
+        width: 162
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac116ff4dc916b541bdb3073308fd7e2
+      internalID: 679104969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_22
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 498
+        width: 103
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfb31e3951dffe47813970926da0bf4
+      internalID: 1111846006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_26
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 142
+        width: 161
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0d7483a02d0b4418c981c8a6bed753
+      internalID: 1955667002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_27
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 143
+        width: 216
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055a066f8460fac4f8a5ed9e71d4d5d3
+      internalID: -2036165348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_28
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 142
+        width: 157
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a899fb5e62488244f962406475c5bb6a
+      internalID: -1465242600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_29
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 88
+        width: 158
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c584ea45cb0f52f4a8023b8b26687a82
+      internalID: -1806082064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_0
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 857
+        width: 72
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f24c858c7b8f046b027a2bee5267bc
+      internalID: 640388061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_1
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 857
+        width: 233
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a82ab498cbfe8443b436bd56339f1db
+      internalID: 1193335439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_4
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 857
+        width: 155
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ad092e0392770459d9b8e5a1ce6463
+      internalID: 1118107018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_11
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 497
+        width: 147
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d69706adffb1cc4b9a2da8b8353b9ac
+      internalID: -1142932925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_12
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 496
+        width: 113
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385de83bb145e30469866413833a76fc
+      internalID: 1940739306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_17
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 496
+        width: 154
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98089b8259261b4ea2c0c8f37361218
+      internalID: 1443112820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallLettersAlphabet_18
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 138
+        width: 156
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d09d82ba26a5e64fa614c5f15a240f9
+      internalID: -345621307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SmallLettersAlphabet_0: 640388061
+      SmallLettersAlphabet_1: 1193335439
+      SmallLettersAlphabet_10: -1481774614
+      SmallLettersAlphabet_11: -1142932925
+      SmallLettersAlphabet_12: 1940739306
+      SmallLettersAlphabet_13: 1006924747
+      SmallLettersAlphabet_14: -243480646
+      SmallLettersAlphabet_15: -1383523410
+      SmallLettersAlphabet_16: 1500261267
+      SmallLettersAlphabet_17: 1443112820
+      SmallLettersAlphabet_18: -345621307
+      SmallLettersAlphabet_19: -1245111528
+      SmallLettersAlphabet_2: -104273376
+      SmallLettersAlphabet_20: 1409055744
+      SmallLettersAlphabet_21: 679104969
+      SmallLettersAlphabet_22: 1111846006
+      SmallLettersAlphabet_23: -1310124474
+      SmallLettersAlphabet_24: -1076459147
+      SmallLettersAlphabet_25: 1907471502
+      SmallLettersAlphabet_26: 1955667002
+      SmallLettersAlphabet_27: -2036165348
+      SmallLettersAlphabet_28: -1465242600
+      SmallLettersAlphabet_29: -1806082064
+      SmallLettersAlphabet_3: 539467323
+      SmallLettersAlphabet_30: -2017444368
+      SmallLettersAlphabet_31: 1483388358
+      SmallLettersAlphabet_32: 1509724898
+      SmallLettersAlphabet_33: -213251597
+      SmallLettersAlphabet_34: 1297056245
+      SmallLettersAlphabet_4: 1118107018
+      SmallLettersAlphabet_5: -2137358020
+      SmallLettersAlphabet_6: 1173702992
+      SmallLettersAlphabet_7: 2034104545
+      SmallLettersAlphabet_8: -96067754
+      SmallLettersAlphabet_9: -975477962
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

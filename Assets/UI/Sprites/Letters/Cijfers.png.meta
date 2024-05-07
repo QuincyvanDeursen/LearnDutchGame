@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: bf5d6faedb81b8a468e90f09af390996
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cijfers_22
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1220
+        width: 160
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b92d2d2b7dcf90499e6b0f5252de3c3
+      internalID: -2071355116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1222
+        width: 102
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6fa240dbb378a429aeed1a8afd4301
+      internalID: 904827229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_24
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1222
+        width: 158
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916d6ce7fe9d0fb4ca28180caff67a20
+      internalID: -537355316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_25
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1218
+        width: 161
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d57a49bdc8a24c46b0ddd2f2c1db8d4
+      internalID: 1627808580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_27
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 1222
+        width: 161
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70599d14bdbbb734fae1c8618f31d62c
+      internalID: 1512646299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_28
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1218
+        width: 161
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180bbd48936562544a4d1dfea8011018
+      internalID: 1683692170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_41
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 858
+        width: 157
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082b72e832d307e4abbd032e9444b009
+      internalID: 1925366672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_43
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 862
+        width: 158
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b5460eaad20ae4c87822f11f3ca5a1
+      internalID: 535449761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_45
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 860
+        width: 158
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f73860d0f346246b3d594a3c37d004
+      internalID: -555788060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cijfers_47
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 860
+        width: 162
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893164da5f17b574b8525df9b31e03b9
+      internalID: 2091240513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cijfers_0: 636427316
+      Cijfers_1: 385682911
+      Cijfers_10: 1390849233
+      Cijfers_11: 2146978421
+      Cijfers_12: 692605665
+      Cijfers_13: 168521134
+      Cijfers_14: 1600643977
+      Cijfers_15: -147414822
+      Cijfers_16: 1900740809
+      Cijfers_17: -577247770
+      Cijfers_18: 758055507
+      Cijfers_19: -1348214018
+      Cijfers_2: -1042502878
+      Cijfers_20: 1283984756
+      Cijfers_21: 272306953
+      Cijfers_22: -2071355116
+      Cijfers_23: 904827229
+      Cijfers_24: -537355316
+      Cijfers_25: 1627808580
+      Cijfers_26: -1788609772
+      Cijfers_27: 1512646299
+      Cijfers_28: 1683692170
+      Cijfers_29: -1869264819
+      Cijfers_3: 1396817653
+      Cijfers_30: 10054669
+      Cijfers_31: -304313594
+      Cijfers_32: 994047409
+      Cijfers_33: 1306516291
+      Cijfers_34: -1572397431
+      Cijfers_35: 425484479
+      Cijfers_36: -1242966307
+      Cijfers_37: -458249415
+      Cijfers_38: -1186497300
+      Cijfers_39: -1252956634
+      Cijfers_4: -568381386
+      Cijfers_40: 897759301
+      Cijfers_41: 1925366672
+      Cijfers_42: 956637101
+      Cijfers_43: 535449761
+      Cijfers_44: -461479402
+      Cijfers_45: -555788060
+      Cijfers_46: -1233173589
+      Cijfers_47: 2091240513
+      Cijfers_48: 1384750995
+      Cijfers_49: 1602364042
+      Cijfers_5: -2104335117
+      Cijfers_50: 1451069105
+      Cijfers_51: 644283888
+      Cijfers_52: 1801944269
+      Cijfers_53: -2066808166
+      Cijfers_54: -1535876002
+      Cijfers_55: -1798964460
+      Cijfers_56: 653458155
+      Cijfers_57: 1474424277
+      Cijfers_58: -1228407965
+      Cijfers_6: 1524083905
+      Cijfers_7: 603882845
+      Cijfers_8: 395840455
+      Cijfers_9: 2013612352
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
