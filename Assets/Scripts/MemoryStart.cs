@@ -16,15 +16,16 @@ public class MemoryStart : MonoBehaviour
     private bool comparingButtons = false;
     private string letterToCompare = "";
     private string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private  int buttonCount;
 
     void Start()
     {
-        int buttonCount = buttons.Count/2;
-        for (int i = 0; i < buttonCount; i++) {
+       buttonCount = buttons.Count;
+        for (int i = 0; i < buttonCount/2; i++) {
            //get Random button and assign random letter
             int randomButton = Random.Range(0, buttons.Count);
             int randomLetter = Random.Range(0, alphabet.Length);
-            buttons[randomButton].GetComponentInChildren<TMP_Text>().text = alphabet[randomLetter].ToString();
+            buttons[randomButton].GetComponentInChildren<TMP_Text>().text = alphabet[randomLetter].ToString().ToUpper();
             AddListenerToButton(buttons[randomButton]);
             buttons[randomButton].GetComponentInChildren<TMP_Text>().enabled = false;
                 //remove button from list
@@ -74,8 +75,9 @@ public class MemoryStart : MonoBehaviour
     }
 
     public void CheckIfGameIsOver() {
-        if (buttons.Count == 0) {
-            Debug.Log("Game Over");
+        buttonCount -= 2;
+        if (buttonCount == 0) {
+            Debug.Log("Game won!");
         }
     }
 
