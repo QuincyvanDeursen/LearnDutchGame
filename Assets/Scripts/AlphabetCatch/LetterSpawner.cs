@@ -3,43 +3,93 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class LetterSpawner : MonoBehaviour
 {
     public TextMeshProUGUI letter;
     public Transform canvas;
-    public float timeBtwSpawn;
+    private float timeBtwSpawn;
+
+    public int letterIndexTreshold = 1;
     public float startTimeBtwSpawn;
-    private float[] spawnPositionsLetters = new float[] { -80f, 0f, 80f };
-    public CSVCharacterLoader csvCharacterLoader;
-    private List<char> characters;
+    private readonly float[] spawnPositionsLetters = new float[] { -600f, 0f, 600f };
+
+    private readonly string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    //Momentele letter waarvoor gezocht wordt
+    private char current;
+
+    //Om te voorkomen dat hetzelfde constant herhaalt wordt.
+    private char lastDroppedLetter;
+    private float lastLane = 0f;
+
     void Start()
     {
-        if (csvCharacterLoader != null)
-        {
-            characters = csvCharacterLoader.GetCharacterList();
-        }
+        current = alphabet[0];
     }
-    private void Update()
+
+    public void HandleClick(char clickedLetter, GameObject letterObject)
     {
-        if (timeBtwSpawn <= 0)
+        print("Current: " + current);
+
+        //Kijk of geklikte letter ook degene is waarnaar wordt gezocht.
+        if (current != clickedLetter)
         {
-            //Random letter kiezen en in de text zetten
-            int randIndexLetter = Random.Range(0, characters.Count);
-            letter.text = characters[randIndexLetter].ToString();
+            //Verkeerde letter
+            
+            //TODO
+            return;
 
-            //Random spawn point kiezen en vector aanmaken
-            int randIndexPos = Random.Range(0, spawnPositionsLetters.Length);
-            Vector3 spawnPosition = new Vector3(spawnPositionsLetters[randIndexPos], 128, 0f);
+        }
+        //Correcte letter dus update.
+        current = alphabet[alphabet.IndexOf(current) + 1];
+        Destroy(letterObject);
+    }
 
-            //Game object aanmaken en positie instellen
-            TextMeshProUGUI spawnedLetter = Instantiate(letter, canvas);
-            spawnedLetter.transform.localPosition = spawnPosition;
+    private float GetRandomLaneSpawnPos()
+    {
+        float lane = spawnPositionsLetters[Random.Range(0, spawnPositionsLetters.Length)];
+        //Als lane hetzelfde is als laatste lane, kies nieuwe lane
+        if (lane == lastLane) return GetRandomLaneSpawnPos();
+            lastLane = lane;
+            return lane;
+    }
 
-            timeBtwSpawn = startTimeBtwSpawn;
-        } 
-        else
+    private char GetRandomLetterBasedOnCurrentLetter(int currentIndex)
+    {
+        //Willekeurige letter gebaseerd op huidige letter en treshold (C = A - E)
+        char letter = alphabet[Random.Range(currentIndex - letterIndexTreshold, currentIndex + letterIndexTreshold)];
+        //Als letter laatst gedropte letter is, kies nieuwe letter
+        if (letter == lastDroppedLetter) return GetRandomLetterBasedOnCurrentLetter(currentIndex);
+        lastDroppedLetter = letter;
+        return letter;
+    }
+
+    void Update()
+    {
+        if (timeBtwSpawn > 0)
         {
             timeBtwSpawn -= Time.deltaTime;
+            return;
         }
+
+        //Momentele letter index vinden
+        int currentIndex = alphabet.IndexOf(current);
+
+        //Checken of treshold over limieten gaat <0 of >26
+        if (currentIndex < letterIndexTreshold) currentIndex = letterIndexTreshold;
+        else if (currentIndex > alphabet.Length - letterIndexTreshold) currentIndex = alphabet.Length - letterIndexTreshold;
+
+        //Willekeurige letter kiezen die niet overeenkomt met de laatst gedropte letter en in de buurt zit van huidige letter
+        letter.text = GetRandomLetterBasedOnCurrentLetter(currentIndex).ToString();
+
+        //Willekeurige spawn point kiezen (anders dan laatste) en vector aanmaken
+        Vector3 spawnPosition = new Vector3(GetRandomLaneSpawnPos(), 1500, 0f);
+
+        //Game object aanmaken en positie instellen
+        TextMeshProUGUI spawnedLetter = Instantiate(letter, canvas);
+        spawnedLetter.transform.localPosition = spawnPosition;
+
+        //Reset timeBtwSpawn
+        timeBtwSpawn = startTimeBtwSpawn;
     }
 }

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7299055571720776141}
   - component: {fileID: 7453366513946407989}
   - component: {fileID: 2415880404145489652}
-  - component: {fileID: 2625105723768038098}
   - component: {fileID: -3715787242854658120}
+  - component: {fileID: 3826477290397809647}
   m_Layer: 5
   m_Name: SpawningLetter
   m_TagString: Untagged
@@ -69,10 +69,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: J
+  m_text: C
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b5a4b1136111c324ab6d504d14f80f1c, type: 2}
-  m_sharedMaterial: {fileID: -2001173290991609969, guid: b5a4b1136111c324ab6d504d14f80f1c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 300
+  m_fontSizeBase: 300
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.3
+  lifetime: 12
 --- !u!114 &2415880404145489652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,19 +169,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &2625105723768038098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8748094640105615582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25529ae998f416643b1bcc0e615b7a02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 5
 --- !u!58 &-3715787242854658120
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -216,3 +204,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5
+--- !u!114 &3826477290397809647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748094640105615582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52956c32f236be418ba0007a54ab8cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LetterSpawnObject: {fileID: 0}
