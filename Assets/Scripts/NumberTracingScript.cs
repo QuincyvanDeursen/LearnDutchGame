@@ -17,16 +17,10 @@ public class NumberTracingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Animate that letter is correctly written
         if (TracedPoints == 0)
         {
             Debug.Log("Number traced");
         }
-
-        //Check if any of the tracing points has a collision with the line
-        // if (TracingPoints.Any(tracingPoint => tracingPoint.GetComponent<TracingPoint>()))
-        // {
-        //     Debug.Log("Number traced");
-        // }
-
     }
 }
