@@ -18,8 +18,8 @@ public class DrawManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (float.IsInfinity(Input.mousePosition.x)) return;
-        
+        if (float.IsInfinity(Input.mousePosition.x) || float.IsInfinity(Input.mousePosition.y)) return;
+
         Vector2 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))
