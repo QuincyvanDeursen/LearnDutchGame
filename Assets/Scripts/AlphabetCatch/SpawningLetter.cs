@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Letter : MonoBehaviour, IPointerClickHandler
+public class SpawningLetter : MonoBehaviour
 {
     public float speed;
+    public float lifetime = 15.0f; 
 
-    public void OnPointerClick(PointerEventData eventData)
+    void Start()
     {
-        Destroy(gameObject);
+        Destroy(gameObject, lifetime);  
     }
-
     // Update is called once per frame
     void Update()
     {
