@@ -595,6 +595,28 @@ MonoBehaviour:
   - {fileID: 6593110863778439779, guid: 547f5c40794072e4cbfa98638f549544, type: 3}
   - {fileID: 4007581074818791252, guid: 44aa67f56a5b80648a105c081bcb8be2, type: 3}
   - {fileID: 3204871291572249449, guid: a2ea26f8435cdc94da0a2950fb77b6ee, type: 3}
+  - {fileID: 8870026195304241725, guid: 89742f6b21976754cb7cdcb3c710d44d, type: 3}
+  - {fileID: 1794166310287975495, guid: 702a77d6a516cc644a8ab43c8ca9f998, type: 3}
+  - {fileID: 6192840698724513603, guid: 24289d803c73f954c9c6e7c77e4ee89b, type: 3}
+  - {fileID: 2278075606311338693, guid: 4526eea583564c748b2419158ed2bbde, type: 3}
+  - {fileID: 4810004020369324637, guid: ac71df46a2936d940aa598b1eb4f6f48, type: 3}
+  - {fileID: 3394807235263446194, guid: f146c7b469333414d817b9bc76390422, type: 3}
+  - {fileID: 1550822318870634442, guid: 82653d8ad2ebc2b47b912f321c7686e8, type: 3}
+  - {fileID: 4920419107753591539, guid: 279f5cb2cb091584ba20eedc1e43fc43, type: 3}
+  - {fileID: 8102549875151708427, guid: fa2619cb906a1254590f28aae4aef1bc, type: 3}
+  - {fileID: 2450817881302621359, guid: 497ce36d81f723048949596cea97b304, type: 3}
+  - {fileID: 1496620815670427363, guid: 9d9462221ba64f4488fb7437357d58cf, type: 3}
+  - {fileID: 37950364757927935, guid: 811c53067ebb7b64a9089f670afabd32, type: 3}
+  - {fileID: 5542775409426531218, guid: 97252070b2330a14abd8468a76b30b93, type: 3}
+  - {fileID: 8773061982368848163, guid: ad4e3507fd5962c4fb29cd817799bea1, type: 3}
+  - {fileID: 129044664284482892, guid: 5f436a15ee0d9464d8e736298966b6aa, type: 3}
+  - {fileID: 1750897817629012165, guid: 2fa7d32cc7a40104ca96194c53cfa46a, type: 3}
+  - {fileID: 476872648241179934, guid: a6292f569fc7ea74d909cb987753a623, type: 3}
+  - {fileID: 3038208197605178170, guid: d2af91e148689904eb6d03cea62940f8, type: 3}
+  - {fileID: 2167248186688355071, guid: 6d3c4b1e569a7d24182c1c88c931ad7e, type: 3}
+  - {fileID: 5431216738632905586, guid: 2cac3a77017f0c5448ff26e926538a7c, type: 3}
+  - {fileID: 6048236547958824627, guid: e7ead1ba096770340ae1cbf7a4d39e7d, type: 3}
+  - {fileID: 5278279224772394644, guid: a723dbc53bc9b624d83750c4552e928b, type: 3}
 --- !u!1 &1193480058
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +734,7 @@ GameObject:
   - component: {fileID: 1230062759}
   - component: {fileID: 1230062762}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -777,7 +799,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1230062760}
   m_OnClick:
     m_PersistentCalls:

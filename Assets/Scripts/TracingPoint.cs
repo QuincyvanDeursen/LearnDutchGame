@@ -8,8 +8,6 @@ public class TracingPoint : MonoBehaviour
     {
         if (other.CompareTag("Line"))
         {
-            Debug.Log("Tracing point triggered");
-
             transform.parent.GetComponent<NumberTracingScript>().TracedPoints--;
 
             Destroy(gameObject);
