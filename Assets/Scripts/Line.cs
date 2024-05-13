@@ -28,9 +28,6 @@ public class Line : MonoBehaviour
         _lineRenderer.positionCount++;
         _lineRenderer.SetPosition(_lineRenderer.positionCount - 1, pos);
 
-        // if (_points.Count > 1) {
-        //     _collider.points = _points.ToArray();
-        // }
         _collider.points = _points.ToArray();
     }
 

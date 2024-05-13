@@ -5,7 +5,6 @@ using UnityEngine;
 public class LetterSpawner : MonoBehaviour
 {
     public List<GameObject> Letters;
-
     protected GameObject _currentLetter;
     // Start is called before the first frame update
     void Start()
