@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Memory.unity
     guid: 33349ad9817e6a247bec86952e2b3999
+  - enabled: 1
+    path: Assets/Scenes/AudibleLetterGuesser.unity
+    guid: 54ec469bc9f3053478f855c95f753b35
+  - enabled: 1
+    path: Assets/Scenes/RangeLetterGuesser.unity
+    guid: ecfc7cf3bec96f04c8aca1ec81f25f17
+  - enabled: 1
+    path: Assets/Scenes/RangeOddOneOutGuesser.unity
+    guid: a30997b15ee4d78448e447263bfbf39f
   m_configObjects: {}
