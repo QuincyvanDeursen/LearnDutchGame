@@ -349,8 +349,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -446,9 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27e2d72914027d4bb15de1d7f6e1401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cam: {fileID: 0}
   _linePrefab: {fileID: -3083957121018670057, guid: 488f23f3e75165040912be1a315e9cc9, type: 3}
-  _currentLine: {fileID: 0}
 --- !u!4 &448765199
 Transform:
   m_ObjectHideFlags: 0
@@ -530,7 +528,7 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 17.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &902899755
@@ -619,7 +617,6 @@ MonoBehaviour:
   - {fileID: 5431216738632905586, guid: 2cac3a77017f0c5448ff26e926538a7c, type: 3}
   - {fileID: 6048236547958824627, guid: e7ead1ba096770340ae1cbf7a4d39e7d, type: 3}
   - {fileID: 5278279224772394644, guid: a723dbc53bc9b624d83750c4552e928b, type: 3}
-  _currentLetter: {fileID: 0}
 --- !u!1 &1193480058
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.058490515, g: 0.44931838, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -869,8 +866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d50175411b34a4d83df0ade07f48db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _letterSpawner: {fileID: 0}
-  _nextButton: {fileID: 0}
 --- !u!1 &2112035556
 GameObject:
   m_ObjectHideFlags: 0
