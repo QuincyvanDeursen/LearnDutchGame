@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class AudibleLetterGuesserController : MonoBehaviour
 {
+    // Mascot element
+    public GameObject mascotObject;
+    private MascotScript mascotScript;
+
     // Text elements
     public TextMeshProUGUI[] letterButtons;
     public TMP_Text scoreTextElement;
@@ -38,6 +42,8 @@ public class LevelManager : MonoBehaviour
     // Start is called on the initiation of the object, when the level is loaded
     void Start()
     {
+        mascotScript = mascotObject.GetComponent<MascotScript>();
+
         NextLetter();
         SetButtonLetters();
     }
@@ -67,7 +73,7 @@ public class LevelManager : MonoBehaviour
     public void SetButtonLetters()
     {
         var tempAlphabet = new List<char>(alphabet);
-        tempAlphabet.Remove(currentLetter[0]);
+        tempAlphabet.RemoveAll(c => char.ToLower(c) == char.ToLower(currentLetter[0]));
 
         for (int i = 0; i < letterButtons.Length; i++)
         {
@@ -79,7 +85,7 @@ public class LevelManager : MonoBehaviour
             currentLetterText.text = randomAlphabetText;
 
             // Remove the random letter from the temporary alphabet
-            tempAlphabet.RemoveAt(randomAlphabetLetterIndex);
+            tempAlphabet.RemoveAll(c => char.ToLower(c) == char.ToLower(randomAlphabetText[0]));
 
             // Add click event listener to the button
             SetButtonEventListener(currentLetterText);
@@ -102,18 +108,27 @@ public class LevelManager : MonoBehaviour
     {
         if (chosenLetter == currentLetter)
         {
+            // Play happy animation
+            mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
+
             score++;
             scoreTextElement.text = $"{score}/10";
 
             if (score >= 10)
             {
-                Debug.Log("Winner!!!");
+                // TODO: Show winner popup and disable game input
+                mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
             }
             else
             {
                 NextLetter();
                 SetButtonLetters();
             }
+        }
+        else
+        {
+            // Play angry animation
+            mascotScript.TriggerAnimation(MascotAnimationType.INCORRECT);
         }
     }
 }
