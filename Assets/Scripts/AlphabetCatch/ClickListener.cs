@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ClickListener : MonoBehaviour, IPointerClickHandler
+public class ClickListener : MonoBehaviour, IPointerDownHandler
 {
     private GameObject LetterSpawnObject;
 
@@ -13,10 +13,9 @@ public class ClickListener : MonoBehaviour, IPointerClickHandler
         LetterSpawnObject = GameObject.Find("Spawner");
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         TextMeshProUGUI textMeshPro = gameObject.GetComponent<TextMeshProUGUI>();
         LetterSpawnObject.GetComponent<LetterSpawner>().HandleClick(textMeshPro.text.ToCharArray()[0], gameObject);
     }
-
 }

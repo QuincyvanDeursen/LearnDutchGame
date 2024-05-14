@@ -21,6 +21,7 @@ public class LetterSpawner : MonoBehaviour
     //Om te voorkomen dat hetzelfde constant herhaalt wordt.
     private char lastDroppedLetter;
     private float lastLane = 0f;
+    public TextMeshProUGUI lastLetterClicked;
 
     void Start()
     {
@@ -41,6 +42,7 @@ public class LetterSpawner : MonoBehaviour
 
         }
         //Correcte letter dus update.
+        lastLetterClicked.text = current.ToString();
         current = alphabet[alphabet.IndexOf(current) + 1];
         Destroy(letterObject);
     }
