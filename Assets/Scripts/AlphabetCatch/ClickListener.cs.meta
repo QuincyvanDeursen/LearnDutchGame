@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: c52956c32f236be418ba0007a54ab8cd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - LetterSpawnScript: {fileID: 5915282899794673967, guid: c190b29fa2aa3a24d9ad60f36e005707, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
