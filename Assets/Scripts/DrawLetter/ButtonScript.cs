@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
 {
-    private LetterSpawner _letterSpawner;
+    private Spawner _letterSpawner;
     private Button _nextButton;
     // Start is called before the first frame update
     void Start()
     {
-        _letterSpawner = FindObjectOfType<LetterSpawner>();
+        _letterSpawner = FindObjectOfType<Spawner>();
         _nextButton = GameObject.Find("NextButton").GetComponent<Button>();
     }
 
@@ -20,6 +20,7 @@ public class ButtonScript : MonoBehaviour
     }
 
     public void OnClick() {
+        print("CALLED");
         var prevLines = GameObject.FindGameObjectsWithTag("Line");
 
         foreach (var line in prevLines) {

@@ -5,6 +5,8 @@ using UnityEngine;
 public class DrawManager : MonoBehaviour
 {
     private Camera _cam;
+
+    public bool canDraw = true;
     [SerializeField] private Line _linePrefab;
 
     public const float minDistance = 0.1f;
@@ -16,8 +18,14 @@ public class DrawManager : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    public void SetDrawEnabled(bool value)
+    {
+        canDraw = value;
+    }
     void Update()
     {
+        if (!canDraw) return;
         if (float.IsInfinity(Input.mousePosition.x) || float.IsInfinity(Input.mousePosition.y)) return;
 
         Vector2 mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);

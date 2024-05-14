@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LetterSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     public List<GameObject> Letters;
 
