@@ -7,6 +7,10 @@ public class LetterSpawner : MonoBehaviour
 {
     public TextMeshProUGUI letter;
     public Transform canvas;
+
+    public GameObject mascot;
+    private MascotScript mascotScript;
+
     public float spawnHeight; 
     private float timeBtwSpawn;
 
@@ -27,6 +31,7 @@ public class LetterSpawner : MonoBehaviour
     void Start()
     {
         current = alphabet[0];
+        mascotScript = mascot.GetComponent<MascotScript>();
     }
 
     public void HandleClick(char clickedLetter, GameObject letterObject)
@@ -39,12 +44,14 @@ public class LetterSpawner : MonoBehaviour
             //Verkeerde letter
             
             //TODO
+            mascotScript.TriggerAnimation(MascotAnimationType.INCORRECT);
             return;
 
         }
         //Correcte letter dus update.
         lastLetterClicked.text = current.ToString();
         current = alphabet[alphabet.IndexOf(current) + 1];
+        mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
         Destroy(letterObject);
     }
 

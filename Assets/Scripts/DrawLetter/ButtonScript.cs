@@ -7,6 +7,7 @@ public class ButtonScript : MonoBehaviour
 {
     private Spawner _letterSpawner;
     private Button _nextButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,6 @@ public class ButtonScript : MonoBehaviour
     }
 
     public void OnClick() {
-        print("CALLED");
         var prevLines = GameObject.FindGameObjectsWithTag("Line");
 
         foreach (var line in prevLines) {
