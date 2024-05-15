@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ButtonSwitchBehaviour : MonoBehaviour
 {
+    
     public GameObject letterContent;
     public GameObject numberContent;
     public TextMeshProUGUI buttonText;
