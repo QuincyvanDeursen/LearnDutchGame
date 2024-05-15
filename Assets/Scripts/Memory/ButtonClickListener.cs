@@ -20,7 +20,6 @@ public class ButtonClickListener : MonoBehaviour
     public GameObject mascot;
 
     void Start() {
-        print("CALLED LISTENER");
         mascotScript = mascot.GetComponent<MascotScript>();
 
         foreach(GameObject button in GameObject.FindGameObjectsWithTag("MemoryButton")) {

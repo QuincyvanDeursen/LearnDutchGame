@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class LetterSpawner : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class LetterSpawner : MonoBehaviour
     public GameObject mascot;
     private MascotScript mascotScript;
 
+    public VideoClip videoClip;
+
     public float spawnHeight; 
     private float timeBtwSpawn;
-
     public int letterIndexTreshold = 1;
     public float startTimeBtwSpawn;
     private readonly float[] spawnPositionsLetters = new float[] { -600f, 0f, 600f };
@@ -26,17 +28,31 @@ public class LetterSpawner : MonoBehaviour
     //Om te voorkomen dat hetzelfde constant herhaalt wordt.
     private char lastDroppedLetter;
     private float lastLane = 0f;
-    public TextMeshProUGUI lastLetterClicked;
+
+    private bool tutorialDone = false;
+    public TextMeshProUGUI lettersToClick;
+    public TextMeshProUGUI lettersClicked;
+    private int clickedIndex = 0;
 
     void Start()
     {
+        var canvas =  GameObject.Find("Canvas");
+        var header = GameObject.Find("Header");
+        canvas.SetActive(false);
+        header.SetActive(false);
+        VideoPlayerScript videoPlayerScript = gameObject.AddComponent<VideoPlayerScript>();
+        videoPlayerScript.StartVideo(videoClip);
+        videoPlayerScript.OnVideoPlayBackCompleted += () => {
+            tutorialDone = true;
+            canvas.SetActive(true);
+            header.SetActive(true);
+        };
         current = alphabet[0];
         mascotScript = mascot.GetComponent<MascotScript>();
     }
 
     public void HandleClick(char clickedLetter, GameObject letterObject)
     {
-        print("Current: " + current);
 
         //Kijk of geklikte letter ook degene is waarnaar wordt gezocht.
         if (current != clickedLetter)
@@ -49,8 +65,14 @@ public class LetterSpawner : MonoBehaviour
 
         }
         //Correcte letter dus update.
-        lastLetterClicked.text = current.ToString();
+        
         current = alphabet[alphabet.IndexOf(current) + 1];
+        lettersClicked.text += clickedLetter;
+        clickedIndex++;
+        if (clickedIndex % 3 == 0) {
+            lettersToClick.text = current.ToString() + alphabet[alphabet.IndexOf(current) + 1] + alphabet[alphabet.IndexOf(current) + 2];
+            lettersClicked.text = "";
+        }
         mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
         Destroy(letterObject);
     }
@@ -76,12 +98,12 @@ public class LetterSpawner : MonoBehaviour
 
     void Update()
     {
+        if (!tutorialDone) return;
         if (timeBtwSpawn > 0)
         {
             timeBtwSpawn -= Time.deltaTime;
             return;
         }
-
         //Momentele letter index vinden
         int currentIndex = alphabet.IndexOf(current);
 

@@ -11,7 +11,6 @@ public class CreateButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("CREATE BUTTONS");
         if (rows * columns % 2 != 0)
         {
             Debug.LogError("Rows * Columns must be even");
