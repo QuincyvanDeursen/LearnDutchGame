@@ -7,6 +7,11 @@ public class LetterSpawner : MonoBehaviour
 {
     public TextMeshProUGUI letter;
     public Transform canvas;
+
+    public GameObject mascot;
+    private MascotScript mascotScript;
+
+    public float spawnHeight; 
     private float timeBtwSpawn;
 
     public int letterIndexTreshold = 1;
@@ -26,6 +31,7 @@ public class LetterSpawner : MonoBehaviour
     void Start()
     {
         current = alphabet[0];
+        mascotScript = mascot.GetComponent<MascotScript>();
     }
 
     public void HandleClick(char clickedLetter, GameObject letterObject)
@@ -38,12 +44,14 @@ public class LetterSpawner : MonoBehaviour
             //Verkeerde letter
             
             //TODO
+            mascotScript.TriggerAnimation(MascotAnimationType.INCORRECT);
             return;
 
         }
         //Correcte letter dus update.
         lastLetterClicked.text = current.ToString();
         current = alphabet[alphabet.IndexOf(current) + 1];
+        mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
         Destroy(letterObject);
     }
 
@@ -85,7 +93,7 @@ public class LetterSpawner : MonoBehaviour
         letter.text = GetRandomLetterBasedOnCurrentLetter(currentIndex).ToString();
 
         //Willekeurige spawn point kiezen (anders dan laatste) en vector aanmaken
-        Vector3 spawnPosition = new Vector3(GetRandomLaneSpawnPos(), 1500, 0f);
+        Vector3 spawnPosition = new Vector3(GetRandomLaneSpawnPos(), spawnHeight, 0f);
 
         //Game object aanmaken en positie instellen
         TextMeshProUGUI spawnedLetter = Instantiate(letter, canvas);

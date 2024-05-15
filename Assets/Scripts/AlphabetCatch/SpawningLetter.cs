@@ -16,7 +16,7 @@ public class SpawningLetter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.down * speed * Time.fixedDeltaTime);
+        transform.Translate(speed * Time.deltaTime * Vector2.down);
     }
 
     void UpdateColliderPosition() {

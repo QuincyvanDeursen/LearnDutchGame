@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Main Menu.unity
+    guid: 6470af71edbb0024ba93e3f9c272d3f9
+  - enabled: 1
+    path: Assets/Scenes/AlphabetPronounciationTrainer.unity
+    guid: 4784af23a4470a242ae88c57c0d38134
+  - enabled: 1
+    path: Assets/Scenes/AlphabetCatch.unity
+    guid: 2173d9ce82d53114083e6ba7f4c3a8c8
+  - enabled: 1
+    path: Assets/Scenes/Memory.unity
+    guid: 33349ad9817e6a247bec86952e2b3999
+  - enabled: 1
+    path: Assets/Scenes/AudibleLetterGuesser.unity
+    guid: 54ec469bc9f3053478f855c95f753b35
+  - enabled: 1
+    path: Assets/Scenes/RangeLetterGuesser.unity
+    guid: ecfc7cf3bec96f04c8aca1ec81f25f17
+  - enabled: 1
+    path: Assets/Scenes/RangeOddOneOutGuesser.unity
+    guid: a30997b15ee4d78448e447263bfbf39f
+  - enabled: 1
+    path: Assets/Scenes/DrawLetterScene.unity
+    guid: 27c97d67b4750d1429320de84f7ed374
   m_configObjects: {}

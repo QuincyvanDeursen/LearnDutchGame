@@ -13,6 +13,10 @@ public class MemoryStart : MonoBehaviour
     private bool firstButton = true;
     private GameObject firstButtonObject;
 
+    public GameObject mascot;
+
+    private MascotScript mascotScript;
+
     private bool comparingButtons = false;
     private string letterToCompare = "";
     private string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -20,6 +24,8 @@ public class MemoryStart : MonoBehaviour
 
     void Start()
     {
+        mascotScript = mascot.GetComponent<MascotScript>();
+
        buttonCount = buttons.Count;
         for (int i = 0; i < buttonCount/2; i++) {
            //get Random button and assign random letter
@@ -77,7 +83,7 @@ public class MemoryStart : MonoBehaviour
     public void CheckIfGameIsOver() {
         buttonCount -= 2;
         if (buttonCount == 0) {
-            Debug.Log("Game won!");
+            //Game won
         }
     }
 
@@ -87,6 +93,8 @@ public class MemoryStart : MonoBehaviour
 
         if (letterToCompare.ToLower() == secondButtonObject.GetComponentInChildren<TMP_Text>().text.ToLower())
         {
+            mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
+            
             Destroy(firstButtonObject);
             Destroy(secondButtonObject);
 
