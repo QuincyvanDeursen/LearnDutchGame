@@ -6,6 +6,8 @@ public class Spawner : MonoBehaviour
 {
     public List<GameObject> Letters;
 
+    public GameObject victoryScreen;
+
     private GameObject _currentLetter;
 
     // Start is called before the first frame update
@@ -35,7 +37,11 @@ public class Spawner : MonoBehaviour
         {
             var index = Letters.FindIndex(x => x.name == _currentLetter?.name);
 
-            if (index == -1 || index + 1 >= Letters.Count) return null;
+            if (index == -1 || index + 1 >= Letters.Count)
+            {
+                victoryScreen.SetActive(true);
+                return null;
+            }
 
             newLetter = Letters[index + 1];
 

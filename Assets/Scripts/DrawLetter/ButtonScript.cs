@@ -7,12 +7,14 @@ public class ButtonScript : MonoBehaviour
 {
     private Spawner _letterSpawner;
     private Button _nextButton;
+    private Button _deleteButton;
 
     // Start is called before the first frame update
     void Start()
     {
         _letterSpawner = FindObjectOfType<Spawner>();
         _nextButton = GameObject.Find("NextButton").GetComponent<Button>();
+        _deleteButton = GameObject.Find("DeleteButton").GetComponent<Button>();
     }
 
     // Update is called once per frame
@@ -20,15 +22,23 @@ public class ButtonScript : MonoBehaviour
     {
     }
 
-    public void OnClick() {
-        var prevLines = GameObject.FindGameObjectsWithTag("Line");
+    public void OnClick()
+    {
+        RemoveAllLines();
 
-        foreach (var line in prevLines) {
-            Destroy(line);
-        }
-        
+        _deleteButton.interactable = true;
         _nextButton.interactable = false;
 
         _letterSpawner.SpawnLetter();
+    }
+
+    public void RemoveAllLines()
+    {
+        var prevLines = GameObject.FindGameObjectsWithTag("Line");
+
+        foreach (var line in prevLines)
+        {
+            Destroy(line);
+        }
     }
 }

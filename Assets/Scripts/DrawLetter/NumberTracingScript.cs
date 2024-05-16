@@ -14,6 +14,7 @@ public class NumberTracingScript : MonoBehaviour
     private MascotScript _mascotScript;
 
     private Button _nextButton;
+    private Button _deleteButton;
 
     private bool playOnce = true;
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class NumberTracingScript : MonoBehaviour
     {
         TracedPoints = TracingPoints.Length;
         _nextButton = GameObject.Find("NextButton").GetComponent<Button>();
+        _deleteButton = GameObject.Find("DeleteButton").GetComponent<Button>();
         Mascot = GameObject.Find("Mascot");
         _mascotScript = Mascot.GetComponent<MascotScript>();
     }
@@ -31,9 +33,11 @@ public class NumberTracingScript : MonoBehaviour
         if (TracedPoints == 0)
         {
             _nextButton.interactable = true;
-            if (playOnce) {
-            _mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
-            playOnce = false;
+            _deleteButton.interactable = false;
+            if (playOnce)
+            {
+                _mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
+                playOnce = false;
             }
         }
     }
