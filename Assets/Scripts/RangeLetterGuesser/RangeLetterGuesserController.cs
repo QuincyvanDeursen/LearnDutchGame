@@ -9,6 +9,8 @@ public class RangeLetterGuesserController : MonoBehaviour
     public GameObject mascotObject;
     private MascotScript mascotScript;
 
+    public GameObject victoryScreen;
+
     // Game properties
     public LevelDifficulty levelDifficulty
     {
@@ -132,6 +134,7 @@ public class RangeLetterGuesserController : MonoBehaviour
             if (currentScore >= requiredScore)
             {
                 // TODO: Show winner popup and disable game input
+                victoryScreen.SetActive(true);
                 mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
             }
             else
