@@ -9,6 +9,8 @@ public class RangeOddOneOutGuesserController : MonoBehaviour
     public GameObject mascotObject;
     private MascotScript mascotScript;
 
+    public GameObject victoryScreen;
+
     // Game properties
     public LevelDifficulty levelDifficulty
     {
@@ -24,13 +26,13 @@ public class RangeOddOneOutGuesserController : MonoBehaviour
             switch (levelDifficulty)
             {
                 case LevelDifficulty.EASY:
-                    return 6;
+                    return 7;
                 case LevelDifficulty.MODERATE:
-                    return 8;
+                    return 9;
                 case LevelDifficulty.HARD:
-                    return 10;
+                    return 11;
                 default:
-                    return 6; // Default is easy
+                    return 7; // Default is easy
             }
         }
     }
@@ -138,6 +140,7 @@ public class RangeOddOneOutGuesserController : MonoBehaviour
             {
                 // TODO: Show winner popup and disable game input
                 mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
+                victoryScreen.SetActive(true);
             }
             else
             {
