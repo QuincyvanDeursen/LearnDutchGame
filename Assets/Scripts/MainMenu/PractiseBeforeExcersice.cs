@@ -19,6 +19,7 @@ public class PractiseBeforeExcersice : MonoBehaviour
         if (!hasPractisedBefore) {
             foreach (GameObject button in buttons) {
                 button.GetComponent<Button>().interactable = false;
+                button.transform.GetChild(2).gameObject.SetActive(true);
             }
         } else {
             foreach (GameObject button in buttons) {

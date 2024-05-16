@@ -10,9 +10,14 @@ public class SceneLoader : MonoBehaviour
     public float transitionTime = 0.5f;
     private int selectedSceneIndex;
 
-    public void LoadScene(int sceneId)
+    private WaitScript waitScript;
+
+    void Start()
     {
-        StartCoroutine(LoadSceneWithAnim(sceneId));
+        waitScript = gameObject.AddComponent<WaitScript>();
+        waitScript.OnWaitCompleted += () => {
+            SceneManager.LoadScene(selectedSceneIndex);
+        };
     }
 
     public void SetSelectedScene(int sceneId)
@@ -20,17 +25,16 @@ public class SceneLoader : MonoBehaviour
         selectedSceneIndex = sceneId;
     }
 
-    public void LoadSelectedScene()
-    {
-        StartCoroutine(LoadSceneWithAnim(selectedSceneIndex));
-    }
-
-    IEnumerator LoadSceneWithAnim(int sceneId)
-    {
+    public void LoadSelectedScene() {
         transition.SetTrigger("Start");
-
-        yield return new WaitForSeconds(transitionTime);
-
-        SceneManager.LoadScene(sceneId);
+        waitScript.StartWait(transitionTime);
     }
+
+    public void LoadScene(int sceneId)
+    {
+        selectedSceneIndex = sceneId;
+        transition.SetTrigger("Start");
+        waitScript.StartWait(transitionTime);
+    }
+
 }

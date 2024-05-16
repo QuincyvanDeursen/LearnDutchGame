@@ -36,7 +36,11 @@ public class MascotScript : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
-        if (victoryAchieved) TriggerAnimation(MascotAnimationType.VICTORY); else TriggerAnimation(MascotAnimationType.WAVING);
+        if (victoryAchieved) TriggerAnimation(MascotAnimationType.VICTORY); else {
+         WaitScript waitScript = gameObject.AddComponent<WaitScript>();
+         waitScript.OnWaitCompleted += () => TriggerAnimation(MascotAnimationType.WAVING);
+         waitScript.StartWait(1);
+        }
     }
 
 

@@ -72,8 +72,14 @@ public class AudibleLetterGuesserController : MonoBehaviour
         mascotScript = mascotObject.GetComponent<MascotScript>();
         scoreTextElement.text = $"0/{requiredScore}";
 
-        NextLetter();
-        SetButtonLetters();
+        WaitScript waitScript = gameObject.AddComponent<WaitScript>();
+        waitScript.OnWaitCompleted += () =>
+        {
+           NextLetter();
+           SetButtonLetters();
+        };
+
+        waitScript.StartWait(0.5f);
     }
 
     // Set a next random letter as the current letter and load the resource
