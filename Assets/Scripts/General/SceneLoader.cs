@@ -8,19 +8,29 @@ public class SceneLoader : MonoBehaviour
 
     public Animator transition;
     public float transitionTime = 0.5f;
-
+    private int selectedSceneIndex;
 
     public void LoadScene(int sceneId)
     {
-        StartCoroutine(LoadSceneWithAnim(sceneId)); 
+        StartCoroutine(LoadSceneWithAnim(sceneId));
     }
 
-    IEnumerator LoadSceneWithAnim(int sceneIndex)
+    public void SetSelectedScene(int sceneId)
+    {
+        selectedSceneIndex = sceneId;
+    }
+
+    public void LoadSelectedScene()
+    {
+        StartCoroutine(LoadSceneWithAnim(selectedSceneIndex));
+    }
+
+    IEnumerator LoadSceneWithAnim(int sceneId)
     {
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(sceneId);
     }
 }

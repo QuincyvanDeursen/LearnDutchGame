@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MascotScript : MonoBehaviour
 {
+    public bool victoryAchieved;
     private Animator animator;
     private AudioSource audioSource;
     private AudioClip CorrectAudioClip
@@ -22,12 +23,20 @@ public class MascotScript : MonoBehaviour
         }
     }
 
+    private AudioClip VictoryAudioClip
+    {
+        get
+        {
+            return Resources.Load<AudioClip>("Audio/Feedback/victory");
+        }
+    }
+
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
 
-        TriggerAnimation(MascotAnimationType.WAVING);
+        if (victoryAchieved) TriggerAnimation(MascotAnimationType.VICTORY); else TriggerAnimation(MascotAnimationType.WAVING);
     }
 
 
@@ -47,6 +56,11 @@ public class MascotScript : MonoBehaviour
                 break;
             case MascotAnimationType.WAVING:
                 animator.SetTrigger("Waving");
+                break;
+            case MascotAnimationType.VICTORY:
+                audioSource.clip = VictoryAudioClip;
+                audioSource.PlayDelayed(0.2f);
+                animator.SetTrigger("Victory");
                 break;
         }
     }
