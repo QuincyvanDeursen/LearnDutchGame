@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PractiseBeforeExcersice : MonoBehaviour
 {
@@ -17,7 +18,12 @@ public class PractiseBeforeExcersice : MonoBehaviour
 
         if (!hasPractisedBefore) {
             foreach (GameObject button in buttons) {
-                button.SetActive(false);
+                button.GetComponent<Button>().interactable = false;
+            }
+        } else {
+            foreach (GameObject button in buttons) {
+                button.GetComponent<Button>().interactable = true;
+                button.transform.GetChild(2).gameObject.SetActive(false);
             }
         }
     }
