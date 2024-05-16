@@ -1,14 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
-
-public class CountdownScript: MonoBehaviour
+public class WaitScript: MonoBehaviour
 {
-    public delegate void CountdownCompleted();
-    public event CountdownCompleted OnCountdownCompleted;
+    public delegate void WaitCompleted();
+    public event WaitCompleted OnWaitCompleted;
 
-    public void StartCountdown(float time)
+    public void StartWait(float time)
     {
         StartCoroutine(Countdown(time));
     }
@@ -21,6 +18,6 @@ public class CountdownScript: MonoBehaviour
             currentTime -= Time.deltaTime;
             yield return null;
         }
-        OnCountdownCompleted?.Invoke();
+        OnWaitCompleted?.Invoke();
     }
 }

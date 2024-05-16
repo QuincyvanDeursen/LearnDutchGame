@@ -36,9 +36,9 @@ public class LetterSpawner : MonoBehaviour
 
     void Start()
     {
-        CountdownScript countdownScript = gameObject.AddComponent<CountdownScript>();
-        countdownScript.StartCountdown(3f);
-        countdownScript.OnCountdownCompleted += () => {
+        WaitScript waitScript = gameObject.AddComponent<WaitScript>();
+        waitScript.StartWait(3f);
+        waitScript.OnWaitCompleted += () => {
             countDownOver = true;
         };
 
