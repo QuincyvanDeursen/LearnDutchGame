@@ -9,13 +9,40 @@ public class AudibleLetterGuesserController : MonoBehaviour
     public GameObject mascotObject;
     private MascotScript mascotScript;
 
+    // Victory Screen elements
+    public GameObject victoryScreen;
+
     // Text elements
     public TextMeshProUGUI[] letterButtons;
     public TMP_Text scoreTextElement;
 
     // Level properties
-    public LevelDifficulty difficulty;
+    private LevelDifficulty difficulty
+    {
+        get
+        {
+            return LevelDifficultyManager.instance?.GetSelectedDifficulty() ?? LevelDifficulty.EASY;
+        }
+    }
     private int score;
+
+    private int requiredScore
+    {
+        get
+        {
+            switch (difficulty)
+            {
+                case LevelDifficulty.EASY:
+                    return 5;
+                case LevelDifficulty.MODERATE:
+                    return 10;
+                case LevelDifficulty.HARD:
+                    return 15;
+                default:
+                    return 5; // Default is easy
+            }
+        }
+    }
     private string alphabet
     {
         get
@@ -43,6 +70,7 @@ public class AudibleLetterGuesserController : MonoBehaviour
     void Start()
     {
         mascotScript = mascotObject.GetComponent<MascotScript>();
+        scoreTextElement.text = $"0/{requiredScore}";
 
         NextLetter();
         SetButtonLetters();
@@ -112,12 +140,12 @@ public class AudibleLetterGuesserController : MonoBehaviour
             mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
 
             score++;
-            scoreTextElement.text = $"{score}/10";
+            scoreTextElement.text = $"{score}/{requiredScore}";
 
-            if (score >= 10)
+            if (score >= requiredScore)
             {
-                // TODO: Show winner popup and disable game input
                 mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
+                victoryScreen.SetActive(true);
             }
             else
             {

@@ -10,7 +10,13 @@ public class RangeLetterGuesserController : MonoBehaviour
     private MascotScript mascotScript;
 
     // Game properties
-    public LevelDifficulty levelDifficulty;
+    public LevelDifficulty levelDifficulty
+    {
+        get
+        {
+            return LevelDifficultyManager.instance?.GetSelectedDifficulty() ?? LevelDifficulty.EASY;
+        }
+    }
     private int rangeLength
     {
         get
