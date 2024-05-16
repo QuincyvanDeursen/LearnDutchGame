@@ -13,17 +13,18 @@ public class ButtonClickListener : MonoBehaviour
     private bool firstButton = true;
 
     private GameObject firstButtonObject;
-    private GameObject secondButtonObject;
-
     private string letterToCompare;
     private MascotScript mascotScript;
     public GameObject mascot;
 
+    public CheckIfPlayerHasWon checkIfPlayerHasWon;
     void Start() {
         mascotScript = mascot.GetComponent<MascotScript>();
-
+        checkIfPlayerHasWon = gameObject.GetComponent<CheckIfPlayerHasWon>();
+        
         foreach(GameObject button in GameObject.FindGameObjectsWithTag("MemoryButton")) {
             button.GetComponent<Button>().onClick.AddListener(ButtonClicked);
+            checkIfPlayerHasWon.maxScore++;
         }
     }
     public void ButtonClicked()
@@ -67,6 +68,8 @@ public class ButtonClickListener : MonoBehaviour
             
             firstButtonObject.GetComponent<Button>().interactable = false;
             secondButtonObject.GetComponent<Button>().interactable = false;
+            checkIfPlayerHasWon.score += 2;
+            checkIfPlayerHasWon.CheckPlayerScore();
         }
         else
         {

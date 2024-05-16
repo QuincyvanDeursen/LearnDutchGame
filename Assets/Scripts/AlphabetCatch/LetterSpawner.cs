@@ -29,24 +29,19 @@ public class LetterSpawner : MonoBehaviour
     private char lastDroppedLetter;
     private float lastLane = 0f;
 
-    private bool tutorialDone = false;
+    private bool countDownOver = false;
     public TextMeshProUGUI lettersToClick;
     public TextMeshProUGUI lettersClicked;
     private int clickedIndex = 0;
 
     void Start()
     {
-        var canvas =  GameObject.Find("Canvas");
-        var header = GameObject.Find("Header");
-        canvas.SetActive(false);
-        header.SetActive(false);
-        VideoPlayerScript videoPlayerScript = gameObject.AddComponent<VideoPlayerScript>();
-        videoPlayerScript.StartVideo(videoClip);
-        videoPlayerScript.OnVideoPlayBackCompleted += () => {
-            tutorialDone = true;
-            canvas.SetActive(true);
-            header.SetActive(true);
+        CountdownScript countdownScript = gameObject.AddComponent<CountdownScript>();
+        countdownScript.StartCountdown(3f);
+        countdownScript.OnCountdownCompleted += () => {
+            countDownOver = true;
         };
+
         current = alphabet[0];
         mascotScript = mascot.GetComponent<MascotScript>();
     }
@@ -65,12 +60,21 @@ public class LetterSpawner : MonoBehaviour
 
         }
         //Correcte letter dus update.
-        
+        if (clickedLetter == 'Z') {
+            //TODO
+            //Win game
+            mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
+            return;
+        }
         current = alphabet[alphabet.IndexOf(current) + 1];
         lettersClicked.text += clickedLetter;
         clickedIndex++;
         if (clickedIndex % 3 == 0) {
-            lettersToClick.text = current.ToString() + alphabet[alphabet.IndexOf(current) + 1] + alphabet[alphabet.IndexOf(current) + 2];
+            if (alphabet.IndexOf(current) + 2 >= alphabet.Length) {
+                lettersToClick.text = current.ToString() + alphabet[alphabet.IndexOf(current) + 1];
+            } else {
+                lettersToClick.text = current.ToString() + alphabet[alphabet.IndexOf(current) + 1] + alphabet[alphabet.IndexOf(current) + 2];
+            }
             lettersClicked.text = "";
         }
         mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
@@ -98,7 +102,7 @@ public class LetterSpawner : MonoBehaviour
 
     void Update()
     {
-        if (!tutorialDone) return;
+        if (!countDownOver) return;
         if (timeBtwSpawn > 0)
         {
             timeBtwSpawn -= Time.deltaTime;
