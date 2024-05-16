@@ -141,9 +141,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 373069708036593522, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296557016435886381, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296557016435886381, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296557016435886381, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1169.9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3296557016435886381, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1627.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3462839590773987945, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
       propertyPath: m_Name
       value: VictoryMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462839590773987945, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483715348750730172, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483715348750730172, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483715348750730172, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1169.9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483715348750730172, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3732.5
       objectReference: {fileID: 0}
     - target: {fileID: 9042351403970673490, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -666,6 +706,10 @@ PrefabInstance:
     - target: {fileID: 7915173368613396849, guid: 818b7f1e0a5ad474492fbab20aeedf27, type: 3}
       propertyPath: m_Name
       value: SettingsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996181106108068622, guid: 818b7f1e0a5ad474492fbab20aeedf27, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1218,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8664080077513975764, guid: bbf5b15b8c731de4f9f900daced2da3d, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8785088807159567514, guid: bbf5b15b8c731de4f9f900daced2da3d, type: 3}
       propertyPath: transitionTime
