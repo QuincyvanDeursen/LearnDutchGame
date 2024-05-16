@@ -123,7 +123,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MascotSpritesheet_0
+      name: MascotSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82fc36f8e93a3444a2c8b16f4980273
+      internalID: -598901567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 600
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6f8ca9915f296408371ffebee07a33
+      internalID: 1171529794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5076d001921b0e47b7700df986be839
-      internalID: -2054396193
+      spriteID: 5f28c0f4997ea9e458646e3839ae62a5
+      internalID: 887975034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_1
+      name: MascotSpriteSheet_7
       rect:
         serializedVersion: 2
         x: 150
@@ -158,14 +200,119 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddc2fad9145465b4193bf81eb32f5cca
-      internalID: 893548494
+      spriteID: 661b748046389ed468416e5ddf2b106e
+      internalID: -1496564343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_6
+      name: MascotSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845c4bdf99136a9409e83c99d3876bab
+      internalID: 1088012084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1949ad7b6a9c2bf4dbf25334aa9384e4
+      internalID: -2017971536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f497d14914f93404c812df4abbaec490
+      internalID: -1199586075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ea140d41d4de948ac07f996a861c5e
+      internalID: 1465351443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 450
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c28fdf903b3cff4bb981d377120433f
+      internalID: -2049290734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MascotSpriteSheet_13
       rect:
         serializedVersion: 2
         x: 0
@@ -179,14 +326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4971d3236ceee847bf34cc5b25205f5
-      internalID: -1428011707
+      spriteID: 2f0e5828ccc67e949924c932696f1dee
+      internalID: -19901315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_7
+      name: MascotSpriteSheet_14
       rect:
         serializedVersion: 2
         x: 150
@@ -200,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8a2848462b21ac42a34e7455961157e
-      internalID: -1612265038
+      spriteID: e86b55e7f8a8271488822c62fafdf4d2
+      internalID: 2131683494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_8
+      name: MascotSpriteSheet_15
       rect:
         serializedVersion: 2
         x: 300
@@ -221,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc62327f9d5a8c34aa922e3541565582
-      internalID: 1961071436
+      spriteID: c671def133e9b544da3b04901fb7a385
+      internalID: -1653304409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_9
+      name: MascotSpriteSheet_16
       rect:
         serializedVersion: 2
         x: 450
@@ -242,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270902cde0caf154388362c43caa23b5
-      internalID: -1414707896
+      spriteID: 7687df7046828fd40a28ea448f326aeb
+      internalID: 2054515631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_10
+      name: MascotSpriteSheet_17
       rect:
         serializedVersion: 2
         x: 600
@@ -263,14 +410,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 076a07fc808a6274b995a78165454038
-      internalID: 735372081
+      spriteID: 123e653f818dd2649905627c168a0e09
+      internalID: -894871319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_11
+      name: MascotSpriteSheet_18
       rect:
         serializedVersion: 2
         x: 750
@@ -284,14 +431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5d80f0a5c42ef247a578422d1afcf52
-      internalID: 747276573
+      spriteID: 0186c5cbe56fb6d4ca1bb55aef141a36
+      internalID: -2047411156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_12
+      name: MascotSpriteSheet_19
       rect:
         serializedVersion: 2
         x: 900
@@ -305,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e853b867b83a494582990e52e052d2d
-      internalID: 858058524
+      spriteID: af3ad96761afdc149ae8dd1b93dc3f75
+      internalID: -793795232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_13
+      name: MascotSpriteSheet_20
       rect:
         serializedVersion: 2
         x: 0
@@ -326,14 +473,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb1e726ca3e80f946a327cb8faace044
-      internalID: -941897448
+      spriteID: 1f4eb367a686a734f87e1dbba3cab124
+      internalID: 898381486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_14
+      name: MascotSpriteSheet_21
       rect:
         serializedVersion: 2
         x: 150
@@ -347,14 +494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 371fb3b2c2b915b42ac4c4344d9dc328
-      internalID: -1779623123
+      spriteID: 2ad5f04df6741cc4380bd2a31c1c5d07
+      internalID: -638639893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_15
+      name: MascotSpriteSheet_22
       rect:
         serializedVersion: 2
         x: 300
@@ -368,14 +515,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2b511b2539907848a0530a7a2037132
-      internalID: -834006060
+      spriteID: cd7f26804540bb9419f47dd285f7df34
+      internalID: 193371693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_16
+      name: MascotSpriteSheet_23
       rect:
         serializedVersion: 2
         x: 450
@@ -389,14 +536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 756aa130cc57a0f45adc5f0fbdb11ee7
-      internalID: -1639508067
+      spriteID: 52c637448eead1b4ea8b22cda1c17854
+      internalID: -1961984379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_17
+      name: MascotSpriteSheet_24
       rect:
         serializedVersion: 2
         x: 600
@@ -410,14 +557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dec6f986f46a52642938693bf3fdd189
-      internalID: 426040275
+      spriteID: 1562dfa9fa38ae24a837202438941e9f
+      internalID: 454780803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_18
+      name: MascotSpriteSheet_25
       rect:
         serializedVersion: 2
         x: 750
@@ -431,14 +578,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59b9b57574bbc3e4a94c4540363168be
-      internalID: -1996516713
+      spriteID: 67e37c2f7bda2c44e9a1e4b20eb6a7e7
+      internalID: 315639503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_19
+      name: MascotSpriteSheet_26
       rect:
         serializedVersion: 2
         x: 900
@@ -452,14 +599,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6139b1fa2a85384493f0934af6e2153
-      internalID: 592610411
+      spriteID: 16965b34491c3e040aeda5bf941b795f
+      internalID: 757936392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_20
+      name: MascotSpriteSheet_27
       rect:
         serializedVersion: 2
         x: 0
@@ -473,14 +620,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cd442564303fe94996a8fec5c5d0fae
-      internalID: 1368022593
+      spriteID: 502f6af318c8f4448b8d7248ede8434a
+      internalID: -2109474234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_21
+      name: MascotSpriteSheet_28
       rect:
         serializedVersion: 2
         x: 150
@@ -494,14 +641,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e878df84f0652b49a53b10fe1bf640e
-      internalID: 450380130
+      spriteID: 5d53b50f65b8db641bfb4862baad0801
+      internalID: 1680162761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_22
+      name: MascotSpriteSheet_29
       rect:
         serializedVersion: 2
         x: 300
@@ -515,14 +662,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a99caed386a11d8468b73009d35d6ae6
-      internalID: 2087073113
+      spriteID: 75da593eadca27248b5d6236777d3009
+      internalID: 484348278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_23
+      name: MascotSpriteSheet_30
       rect:
         serializedVersion: 2
         x: 450
@@ -536,14 +683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4586e988d3a87e469588aa4dc053e6a
-      internalID: -536103433
+      spriteID: 8baed18c3ee1d044980d46f071149224
+      internalID: -680870423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_24
+      name: MascotSpriteSheet_31
       rect:
         serializedVersion: 2
         x: 600
@@ -557,14 +704,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5b96519448c5d4b82c18a738b377d5
-      internalID: 745409793
+      spriteID: d9ddb2aa6ea6d7342bc7698a4c908fa3
+      internalID: 1067664105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_25
+      name: MascotSpriteSheet_32
       rect:
         serializedVersion: 2
         x: 750
@@ -578,14 +725,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 720c58b2ec169774388a989adde3966f
-      internalID: 1992002647
+      spriteID: 787c813db80ba6346be6ab3ac1dddac4
+      internalID: -1742542862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MascotSpritesheet_26
+      name: MascotSpriteSheet_33
       rect:
         serializedVersion: 2
         x: 900
@@ -599,8 +746,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c381db17ac9d046b7c7e18a4d36672
-      internalID: 397972016
+      spriteID: 9a7fbe431f4380d4d90b1358a1611dc0
+      internalID: -1711947281
       vertices: []
       indices: 
       edges: []
@@ -616,33 +763,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MascotSpritesheet_0: -2054396193
-      MascotSpritesheet_1: 893548494
-      MascotSpritesheet_10: 735372081
-      MascotSpritesheet_11: 747276573
-      MascotSpritesheet_12: 858058524
-      MascotSpritesheet_13: -941897448
-      MascotSpritesheet_14: -1779623123
-      MascotSpritesheet_15: -834006060
-      MascotSpritesheet_16: -1639508067
-      MascotSpritesheet_17: 426040275
-      MascotSpritesheet_18: -1996516713
-      MascotSpritesheet_19: 592610411
-      MascotSpritesheet_2: -292278301
-      MascotSpritesheet_20: 1368022593
-      MascotSpritesheet_21: 450380130
-      MascotSpritesheet_22: 2087073113
-      MascotSpritesheet_23: -536103433
-      MascotSpritesheet_24: 745409793
-      MascotSpritesheet_25: 1992002647
-      MascotSpritesheet_26: 397972016
-      MascotSpritesheet_3: 921445861
-      MascotSpritesheet_4: 1398090267
-      MascotSpritesheet_5: 855781083
-      MascotSpritesheet_6: -1428011707
-      MascotSpritesheet_7: -1612265038
-      MascotSpritesheet_8: 1961071436
-      MascotSpritesheet_9: -1414707896
+      MascotSpriteSheet_0: -598901567
+      MascotSpriteSheet_1: 1171529794
+      MascotSpriteSheet_10: -1199586075
+      MascotSpriteSheet_11: 1465351443
+      MascotSpriteSheet_12: -2049290734
+      MascotSpriteSheet_13: -19901315
+      MascotSpriteSheet_14: 2131683494
+      MascotSpriteSheet_15: -1653304409
+      MascotSpriteSheet_16: 2054515631
+      MascotSpriteSheet_17: -894871319
+      MascotSpriteSheet_18: -2047411156
+      MascotSpriteSheet_19: -793795232
+      MascotSpriteSheet_2: -2059160851
+      MascotSpriteSheet_20: 898381486
+      MascotSpriteSheet_21: -638639893
+      MascotSpriteSheet_22: 193371693
+      MascotSpriteSheet_23: -1961984379
+      MascotSpriteSheet_24: 454780803
+      MascotSpriteSheet_25: 315639503
+      MascotSpriteSheet_26: 757936392
+      MascotSpriteSheet_27: -2109474234
+      MascotSpriteSheet_28: 1680162761
+      MascotSpriteSheet_29: 484348278
+      MascotSpriteSheet_3: 1697339165
+      MascotSpriteSheet_30: -680870423
+      MascotSpriteSheet_31: 1067664105
+      MascotSpriteSheet_32: -1742542862
+      MascotSpriteSheet_33: -1711947281
+      MascotSpriteSheet_4: 138811158
+      MascotSpriteSheet_5: 2135478966
+      MascotSpriteSheet_6: 887975034
+      MascotSpriteSheet_7: -1496564343
+      MascotSpriteSheet_8: 1088012084
+      MascotSpriteSheet_9: -2017971536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
