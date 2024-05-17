@@ -8,6 +8,7 @@ public class ClickListener : MonoBehaviour, IPointerDownHandler
 {
     private GameObject LetterSpawnObject;
 
+
     public void Start()
     {
         LetterSpawnObject = GameObject.Find("Spawner");

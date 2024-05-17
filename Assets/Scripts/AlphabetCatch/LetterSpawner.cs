@@ -14,6 +14,8 @@ public class LetterSpawner : MonoBehaviour
 
     public VideoClip videoClip;
 
+    public GameObject victoryScreen;
+
     public float spawnHeight; 
     private float timeBtwSpawn;
     public int letterIndexTreshold = 1;
@@ -32,6 +34,8 @@ public class LetterSpawner : MonoBehaviour
     private bool countDownOver = false;
     public TextMeshProUGUI lettersToClick;
     public TextMeshProUGUI lettersClicked;
+
+    private GameObject AudioManager;
     private int clickedIndex = 0;
 
     void Start()
@@ -41,6 +45,8 @@ public class LetterSpawner : MonoBehaviour
         waitScript.OnWaitCompleted += () => {
             countDownOver = true;
         };
+
+        AudioManager = GameObject.Find("AudioManager");
 
         current = alphabet[0];
         mascotScript = mascot.GetComponent<MascotScript>();
@@ -61,14 +67,17 @@ public class LetterSpawner : MonoBehaviour
         }
         //Correcte letter dus update.
         if (clickedLetter == 'Z') {
-            //TODO
-            //Win game
-            mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
+            //Win Game
+            lettersClicked.text += clickedLetter;
+            victoryScreen.SetActive(true);
             return;
         }
         current = alphabet[alphabet.IndexOf(current) + 1];
         lettersClicked.text += clickedLetter;
         clickedIndex++;
+
+        AudioManager.GetComponent<AudioSource>().PlayOneShot(Resources.Load<AudioClip>("Audio/Alphabet/" + clickedLetter));
+        
         if (clickedIndex % 3 == 0) {
             if (alphabet.IndexOf(current) + 2 >= alphabet.Length) {
                 lettersToClick.text = current.ToString() + alphabet[alphabet.IndexOf(current) + 1];
