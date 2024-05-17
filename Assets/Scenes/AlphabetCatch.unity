@@ -2144,7 +2144,7 @@ PrefabInstance:
     - target: {fileID: 1780124043990620792, guid: 5e916279e49cf8e45b9c92cce500c2e1, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: d37c976e0276b2346a4e937568ecab97, type: 3}
+      objectReference: {fileID: 32900000, guid: e6fb977fd910d554e8afc8de51bd6c4c, type: 3}
     - target: {fileID: 1955392016097195384, guid: 5e916279e49cf8e45b9c92cce500c2e1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
