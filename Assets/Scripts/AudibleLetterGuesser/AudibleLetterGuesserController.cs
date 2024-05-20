@@ -14,10 +14,13 @@ public class AudibleLetterGuesserController : MonoBehaviour
 
     // Text elements
     public TextMeshProUGUI[] letterButtons;
+
+    private OnClickListener onClickListener;
+    private CreateRandomButtons createRandomButtons;
     public TMP_Text scoreTextElement;
 
     // Level properties
-    private LevelDifficulty difficulty
+    private LevelDifficulty Difficulty
     {
         get
         {
@@ -26,28 +29,24 @@ public class AudibleLetterGuesserController : MonoBehaviour
     }
     private int score;
 
-    private int requiredScore
+    private int RequiredScore
     {
         get
         {
-            switch (difficulty)
+            return Difficulty switch
             {
-                case LevelDifficulty.EASY:
-                    return 5;
-                case LevelDifficulty.MODERATE:
-                    return 10;
-                case LevelDifficulty.HARD:
-                    return 15;
-                default:
-                    return 5; // Default is easy
-            }
+                LevelDifficulty.EASY => 5,
+                LevelDifficulty.MODERATE => 10,
+                LevelDifficulty.HARD => 15,
+                _ => 5,// Default is easy
+            };
         }
     }
-    private string alphabet
+    private string Alphabet
     {
         get
         {
-            return difficulty switch
+            return Difficulty switch
             {
                 LevelDifficulty.EASY => "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
                 LevelDifficulty.HARD => "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -58,7 +57,7 @@ public class AudibleLetterGuesserController : MonoBehaviour
 
     // Current letter properties
     private string currentLetter;
-    private AudioClip currentLetterAudioClip
+    private AudioClip CurrentLetterAudioClip
     {
         get
         {
@@ -70,13 +69,17 @@ public class AudibleLetterGuesserController : MonoBehaviour
     void Start()
     {
         mascotScript = mascotObject.GetComponent<MascotScript>();
-        scoreTextElement.text = $"0/{requiredScore}";
+        onClickListener = gameObject.AddComponent<OnClickListener>();
+        createRandomButtons = gameObject.AddComponent<CreateRandomButtons>();
+
+        scoreTextElement.text = $"0/{RequiredScore}";
 
         WaitScript waitScript = gameObject.AddComponent<WaitScript>();
         waitScript.OnWaitCompleted += () =>
         {
            NextLetter();
-           SetButtonLetters();
+           SetClickListeners();
+           createRandomButtons.SetButtonListeners(onClickListener, currentLetter[0]);
         };
 
         waitScript.StartWait(0.5f);
@@ -85,84 +88,47 @@ public class AudibleLetterGuesserController : MonoBehaviour
     // Set a next random letter as the current letter and load the resource
     public void NextLetter()
     {
-        currentLetter = alphabet[UnityEngine.Random.Range(0, alphabet.Length)].ToString();
-
+        currentLetter = Alphabet[UnityEngine.Random.Range(0, Alphabet.Length)].ToString();
+        createRandomButtons.SetButtonLetters(Alphabet, currentLetter[0]);
         PlayLetterAudio();
     }
+    
 
     // Play the audio file of the current letter
     public void PlayLetterAudio()
     {
-        if (currentLetterAudioClip != null)
+        if (CurrentLetterAudioClip != null)
         {
-            AudioSource.PlayClipAtPoint(currentLetterAudioClip, new Vector3(0, 0, -8));
+            AudioSource.PlayClipAtPoint(CurrentLetterAudioClip, new Vector3(0, 0, -8));
         }
         else
         {
-            Debug.LogError("Failed to load audio clip for letter " + currentLetterAudioClip);
+            Debug.LogError("Failed to load audio clip for letter " + CurrentLetterAudioClip);
         }
     }
-
-    // Set new text in the buttons (the currentletter is always present)
-    public void SetButtonLetters()
-    {
-        var tempAlphabet = new List<char>(alphabet);
-        tempAlphabet.RemoveAll(c => char.ToLower(c) == char.ToLower(currentLetter[0]));
-
-        for (int i = 0; i < letterButtons.Length; i++)
+        private void SetClickListeners() {
+        //If correct button is pressed
+      onClickListener.OnCorrectButtonPressed += () =>
         {
-            var currentLetterText = letterButtons[i];
-            var randomAlphabetLetterIndex = UnityEngine.Random.Range(0, tempAlphabet.Count);
-            var randomAlphabetText = tempAlphabet[randomAlphabetLetterIndex].ToString();
-
-            // Set the text in the current text box
-            currentLetterText.text = randomAlphabetText;
-
-            // Remove the random letter from the temporary alphabet
-            tempAlphabet.RemoveAll(c => char.ToLower(c) == char.ToLower(randomAlphabetText[0]));
-
-            // Add click event listener to the button
-            SetButtonEventListener(currentLetterText);
-        }
-
-        // Make sure the currentLetter is included in a random index
-        var randomWrongElement = letterButtons[UnityEngine.Random.Range(0, letterButtons.Length)];
-        randomWrongElement.text = currentLetter;
-        SetButtonEventListener(randomWrongElement);
-    }
-
-    // Set the button evenlistener of the method to the letterbuttononclick method
-    private void SetButtonEventListener(TextMeshProUGUI textMeshProUGUI)
-    {
-        textMeshProUGUI.GetComponentInParent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
-        textMeshProUGUI.GetComponentInParent<UnityEngine.UI.Button>().onClick.AddListener(() => LetterButtonOnClick(textMeshProUGUI.text));
-    }
-
-    public void LetterButtonOnClick(string chosenLetter)
-    {
-        if (chosenLetter == currentLetter)
-        {
-            // Play happy animation
-            mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
-
             score++;
-            scoreTextElement.text = $"{score}/{requiredScore}";
-
-            if (score >= requiredScore)
+            scoreTextElement.text = $"{score}/{RequiredScore}";
+            if (score >= RequiredScore)
             {
-                mascotScript.TriggerAnimation(MascotAnimationType.WAVING);
+                mascotScript.TriggerAnimation(MascotAnimationType.VICTORY);
                 victoryScreen.SetActive(true);
             }
             else
             {
+                mascotScript.TriggerAnimation(MascotAnimationType.CORRECT);
                 NextLetter();
-                SetButtonLetters();
+                createRandomButtons.SetButtonListeners(onClickListener, currentLetter[0]);
             }
-        }
-        else
+        };
+
+        //If incorrect button is pressed
+        onClickListener.OnIncorrectButtonPressed += () =>
         {
-            // Play angry animation
             mascotScript.TriggerAnimation(MascotAnimationType.INCORRECT);
-        }
+        };
     }
 }

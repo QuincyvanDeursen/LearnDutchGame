@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Line
   - MemoryButton
+  - RangeGuesserButton
   layers:
   - Default
   - TransparentFX

@@ -1104,7 +1104,7 @@ GameObject:
   - component: {fileID: 457319725}
   m_Layer: 5
   m_Name: LetterButton6
-  m_TagString: Untagged
+  m_TagString: RangeGuesserButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 617843940}
   m_Layer: 5
   m_Name: LetterButton3
-  m_TagString: Untagged
+  m_TagString: RangeGuesserButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1682,7 +1682,7 @@ GameObject:
   - component: {fileID: 843415063}
   m_Layer: 5
   m_Name: LetterButton1
-  m_TagString: Untagged
+  m_TagString: RangeGuesserButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1803,7 +1803,7 @@ GameObject:
   - component: {fileID: 847635524}
   m_Layer: 5
   m_Name: LetterButton2
-  m_TagString: Untagged
+  m_TagString: RangeGuesserButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2726,15 +2726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mascotObject: {fileID: 1548902427}
   victoryScreen: {fileID: 1753685752}
-  letterButtons:
-  - {fileID: 1031792784}
-  - {fileID: 941911565}
-  - {fileID: 2026825573}
-  - {fileID: 242784058}
-  - {fileID: 944591034}
-  - {fileID: 132943236}
-  scoreTextElement: {fileID: 12921516}
   rangeTextElement: {fileID: 572964354}
+  scoreTextElement: {fileID: 12921516}
 --- !u!1001 &1295088440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3061,7 +3054,7 @@ GameObject:
   - component: {fileID: 1506381010}
   m_Layer: 5
   m_Name: LetterButton4
-  m_TagString: Untagged
+  m_TagString: RangeGuesserButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3607,7 +3600,7 @@ GameObject:
   - component: {fileID: 1830520710}
   m_Layer: 5
   m_Name: LetterButton5
-  m_TagString: Untagged
+  m_TagString: RangeGuesserButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
