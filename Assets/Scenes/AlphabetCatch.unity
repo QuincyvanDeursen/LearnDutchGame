@@ -1773,6 +1773,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3732.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9042351403970673490, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042351403970673490, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1356325963}
+    - target: {fileID: 9042351403970673490, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042351403970673490, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9089472292239627794, guid: 6959b616f2c147f4489f2c9f584cc9c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0
